@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <web-resource key="${atlassian.plugin.key}-resources" name="${atlassian.plugin.key} Common Web Resources">
+        <resource type="download" name="images/" location="/images"/>
+        <context>better-list-labels-plugin</context>
+    </web-resource>
+
+    <web-resource key="${atlassian.plugin.key}-page-resources" name="${atlassian.plugin.key} Page Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="${project.artifactId}-page.css" location="/css/page.css"/>
+        <resource type="download" name="${project.artifactId}-page.js" location="/js/page.js"/>
+        <context>preview</context>
+        <context>page</context>
+    </web-resource>
+
+<!--
+    <web-resource key="${atlassian.plugin.key}-editor-resources" name="${atlassian.plugin.key} Editor Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="${project.artifactId}-editor.css" location="/css/editor.css"/>
+        <resource type="download" name="${project.artifactId}-editor.js" location="/js/editor.js"/>
+        <context>editor</context>
+    </web-resource>
+-->
+</atlassian-plugin>
