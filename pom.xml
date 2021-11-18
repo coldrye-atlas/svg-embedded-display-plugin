@@ -6,16 +6,16 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>eu.coldrye.confluence.plugins</groupId>
-    <artifactId>clickable-anchors-plugin</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>svg-embedded-display-plugin</artifactId>
+    <version>1.0.0-FINAL</version>
 
     <organization>
         <name>coldrye</name>
         <url>http://coldrye.eu/</url>
     </organization>
 
-    <name>clickable-anchors-plugin</name>
-    <description>This is the eu.coldrye.confluence.plugins:clickable-anchors-plugin plugin for Atlassian Confluence.</description>
+    <name>svg-embedded-display-plugin</name>
+    <description>Embedded SVG display plugin for Atlassian Confluence.</description>
     <packaging>atlassian-plugin</packaging>
 
     <dependencies>
@@ -70,7 +70,6 @@
 
                         <!-- Add package to export here -->
                         <Export-Package>
-                            eu.coldrye.confluence.plugins.better_list_labels
                         </Export-Package>
 
                         <!-- Add package import here -->
@@ -112,8 +111,8 @@
     </build>
 
     <properties>
-        <confluence.version>6.11.0</confluence.version>
-        <confluence.data.version>6.11.0</confluence.data.version>
+        <confluence.version>7.13.0</confluence.version>
+        <confluence.data.version>7.13.0</confluence.data.version>
         <amps.version>6.3.15</amps.version>
         <plugin.testrunner.version>1.2.3</plugin.testrunner.version>
         <atlassian.spring.scanner.version>2.1.7</atlassian.spring.scanner.version>
